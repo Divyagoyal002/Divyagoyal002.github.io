@@ -1,0 +1,280 @@
+.container {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+
+.container .box {
+
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
+    background-color: rgb(126, 114, 180);
+
+}
+
+.container .box:hover .imgBox {
+    transform: translate(-1.5rem, -1.5rem)
+}
+
+.container .box:hover .content {
+
+    transform: translate(6rem, 2rem)
+}
+
+.imgBox {
+
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.imgBox img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+header {
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position:fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav li :hover {
+    color: rgb(98, 89, 138);
+}
+
+main {
+    margin-top: 10px;
+    background-size:contain;
+    background-repeat: repeat-y;
+    padding: 10px;
+    background-image: url("bg2.avif");
+}
+
+section {
+    margin-bottom: 40px;
+}
+.about {
+
+    background-color: rgb(242, 242, 242, .6);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Education {
+
+    background-color: rgb(242, 242, 242, .6);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Skills {
+    background-color: rgb(242, 242, 242, .6);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Skills ul {
+    display: flex;
+
+}
+.Skills ul li{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.Skills td img{
+    height: 70px;
+}
+
+.Experience {
+    background-color: rgb(242, 242, 242, .6);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.Certifications {
+    background-color: rgb(242, 242, 242, .6);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.Certifications h4:hover {
+    color: rgb(98, 89, 138);
+}
+.project {
+    background-color: rgb(242, 242, 242, .6);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3:hover {
+    color: rgb(98, 89, 138);
+}
+
+.Blogs {
+    background-color: rgb(242, 242, 242, .6);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Blogs h3:hover {
+    color: rgb(98, 89, 138);
+}
+
+footer {
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 10px;
+
+}
+
+footer th {
+    height: 30px;
+    text-align: center;
+    width: 100px;
+}
+
+footer td {
+    height: 30px;
+    text-align: center;
+    width: 100px;
+    font-size: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+th {
+    text-align: center;
+    width: 200px;
+
+}
+
+td {
+    text-align: center;
+    width: 200px;
+    font-size: small;
+}
+
+img {
+    height: 25px;
+}
+
+table {
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
